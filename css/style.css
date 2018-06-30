@@ -24,6 +24,10 @@ body {
     height: 100%;
 }
 
+.register-tab, .register-tab-mobile {
+    display: block;
+}
+
 @media (max-device-width: 480px) {
     p {
         font-family: 'Raleway', sans-serif;

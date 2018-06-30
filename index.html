@@ -17,47 +17,51 @@
 
 <body>
     <div class="container">
-        <div class="row as-parent hide-mobile">
-            <div class="col-xs-8 as-parent line left-side-pannel">
-                <div class="row vertical-align-quarter">
+        <div class ="hide-mobile as-parent">
+            <div class="row as-parent">
+                <div class="col-xs-8 as-parent line left-side-pannel">
+                    <div class="row vertical-align-quarter">
+                    </div>
+                    <div class="row">
+                        <h1 class="col-xs-10 col-xs-push-1">Welcome to Deadman!</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-push-1">
+                            <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
+                              The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
+                            The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
+                            <p>Please select your role:
+                              <ul>
+                                <li> You want to store a secret password on the device </li>
+                                <li> You want to check whether the whistleblower is still alive </li>
+                              </ul>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <h1 class="col-xs-10 col-xs-push-1">Welcome to Deadman!</h1>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-push-1">
-                        <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
-                          The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
-                        The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
-                        <p>Please select your role:
-                          <ul>
-                            <li> You want to store a secret password on the device </li>
-                            <li> You want to check whether the whistleblower is still alive </li>
-                          </ul>
-                        </p>
+                <div id="login-register-tab" class="col-xs-4 as-parent right-side-pannel">
+                    <div class="row vertical-align-middle">
+                    </div>
+                    <div class="row">
+                        <h2 class="col-xs-10 col-xs-push-1">Select your option:</h2>
+                    </div>
+                    <div class="row">
+                        <form class="col-xs-10 col-xs-push-1 form-box">
+                            <div class="form-group">
+                                <button id="register-ledger" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form class="col-xs-10 col-xs-push-1 form-box">
+                            <div class="form-group">
+                                <button id="check-ledger" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div id="login-register-tab" class="col-xs-4 as-parent right-side-pannel">
-                <div class="row vertical-align-middle">
-                </div>
-                <div class="row">
-                    <h2 class="col-xs-10 col-xs-push-1">Select your option:</h2>
-                </div>
-                <div class="row">
-                    <form class="col-xs-10 col-xs-push-1 form-box">
-                        <div class="form-group">
-                            <button id="register-ledger" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <form class="col-xs-10 col-xs-push-1 form-box">
-                        <div class="form-group">
-                            <button id="check-ledger" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="row as-parent register-tab">
             </div>
         </div>
         <div class="show-mobile">
