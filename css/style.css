@@ -38,7 +38,7 @@ p, li {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 400%;
+    font-size: 300%;
     font-weight: 700;
     margin-bottom: 5%;
     word-wrap: break-word;
@@ -52,9 +52,14 @@ h2 {
     word-wrap: break-word;
 }
 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 
 @media (max-device-width: 480px) {
-    p {
+    p, li {
         font-family: 'Raleway', sans-serif;
         font-size: 13px;
         word-wrap: break-word;

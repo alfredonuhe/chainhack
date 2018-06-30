@@ -1,0 +1,28 @@
+{
+    "name": "package",
+    "version": "0.0.1",
+    "description": "dead man switch on BTC",
+    "main": "app.js",
+    "dependencies": {
+        "@ledgerhq/hw-transport-node-hid": "^4.16.0",
+        "babel-runtime": "^6.26.0",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "request": "^2.87.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/deadmanbtc/deadmanbtc.git"
+    },
+    "author": "nobody",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/deadmanbtc/deadmanbtc/issues"
+    },
+    "homepage": "https://github.com/deadmanbtc/deadmanbtc#readme"
+}
