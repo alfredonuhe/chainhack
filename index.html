@@ -118,7 +118,7 @@
                     </div>
                     <div class = "row">
                         <div class="col-centered col-xs-4">
-                            <button type="button" class="btn btn-default col-xs-8" id="submit-check-buttom">Check</button>
+                            <button type="button" class="btn btn-default col-xs-8" id="submit-check-button">Check</button>
                         </div>
                     </div>
                     <div class = "row">
@@ -185,33 +185,54 @@
                     <div class="form-group">
                           <label class="control-label" for="public-key-input">Pubkey:</label>
                           <div>
-                              <input type="text" class="form-control" id="public-key-input" placeholder="e.g.: 02a1633cafcc...">
+                              <input type="text" class="form-control" id="public-key-input-mobile" placeholder="e.g.: 02a1633cafcc...">
                           </div>
                           <p>A bitcoin public key that will identify the transactions that "keep you alive".</p>
                     </div>
                     <div class="form-group">
                           <label class="control-label" for="period-input">Time period (in seconds):</label>
                           <div>
-                              <input type="number" class="form-control" id="period-input" placeholder="e.g.: 1296000 (= 30 days)">
+                              <input type="number" class="form-control" id="period-input-mobile" placeholder="e.g.: 1296000 (= 30 days)">
                           </div>
                           <p>The maximum amount of time (in seconds) that can pass between two consecutive transactions before the switch is activated.
                     <div class="form-group">
                           <label class="control-label" for="current-block-hash-input">Current hash block:</label>
                           <div>
-                              <input type="text" class="form-control" id="current-block-hash-input" placeholder="e.g.: 002bbd6ea638...">
+                              <input type="text" class="form-control" id="current-block-hash-input-mobile" placeholder="e.g.: 002bbd6ea638...">
                           </div>
                           <p>The hash of the block that contains your first transaction (for security wait for five confirmations).</p>
                     </div>
                       <div class="form-group">
                           <label class="control-label" for="password-input">Secret password:</label>
                           <div>
-                              <input type="password" class="form-control" id="password-input" placeholder="e.g.: My dog's name, etc">
+                              <input type="password" class="form-control" id="password-input-mobile" placeholder="e.g.: My dog's name, etc">
                           </div>
                           <p>Your secret password. Any combination of alphanumeric characters.</p>
                     </div>
                     <div class="row">
                         <button type="button" class="btn btn-default" id="submit-register-button-mobile">Submit</button>
                         <button type="button" class="btn btn-default pull-right" id="go-back-button-mobile">Go back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row as-parent check-tab-mobile">
+                <div class = "col-xs-12 as-parent">
+                    <div class = "row vertical-align-middle">
+                    </div>
+                    <div class = "row">
+                        <div class="col-centered col-xs-5">
+                            <p>Click the check button to see if the ledger is still active.</p>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class="col-centered col-xs-4">
+                            <button type="button" class="btn btn-default col-xs-8" id="submit-check-button-mobile">Check</button>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class="col-centered col-xs-5">
+                            <h2 id ="check-result-mobile">Result:</h2>
+                        </div>
                     </div>
                 </div>
             </div>

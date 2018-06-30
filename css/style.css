@@ -24,8 +24,11 @@ body {
     height: 100%;
 }
 
-.register-tab, .register-tab-mobile {
+.register-tab-mobile, .register-tab, .check-tab, .check-tab-mobile {
     display: none;
+}
+
+.register-tab, .register-tab-mobile {
     margin-left: 10%;
     margin-right: 10%;
     background-color: "red";
