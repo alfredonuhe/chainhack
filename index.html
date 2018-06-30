@@ -28,7 +28,7 @@
                     <div class="row vertical-align-quarter">
                     </div>
                     <div class="row">
-                        <h1 class="col-xs-10 col-xs-push-1">Welcome to Deadman!</h1>
+                        <h1 class="col-xs-10 col-xs-push-1">Welcome to Deadman Switch!</h1>
                     </div>
                     <div class="row">
                         <div class="col-xs-10 col-xs-push-1">
@@ -53,43 +53,57 @@
                     <div class="row">
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
-                                <button id="register-buttom" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+                                <button id="register-button" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
                             </div>
                         </form>
                     </div>
                     <div class="row">
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
-                                <button id="check-buttom" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
+                                <button id="check-button" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="row as-parent register-tab">
-                <div class="col-xs 12">
+                <div class="row">
+                    <h1 class="col-xs-10 col-xs-push-1">Register your secret</h1>
+                </div>
+                <div class="row col-xs-10 col-xs-push-1">
+                    <p>In order to prove that you're alive, you're required to keep recording transactions on the bitcoin blockchain with a time lapse less than a time period you define.
+                      Therefore, on top of your secret password, some additional parameters must be provided to configure your deadman switch.
+                    <div class="form-group">
+                          <label class="control-label" for="public-key-input">Pubkey:</label>
+                          <div>
+                              <input type="text" class="form-control" id="public-key-input" placeholder="e.g.: 02a1633cafcc01ebfb6d78e39f687a1f0995c62fc95f51ead10a02ee0be551b5dc">
+                          </div>
+                          <p>The bitcoin public key that will identify the transactions that "keep you alive".</p>
+                    </div>
+                    <div class="form-group">
+                          <label class="control-label" for="period-input">Time period (in seconds):</label>
+                          <div>
+                              <input type="number" class="form-control" id="period-input" placeholder="e.g.: 1296000 (= 30 days)">
+                          </div>
+                          <p>The maximum amount of time (in seconds) that can pass between two consecutive transactions before the switch is activated, therefore enabling disclosure of your secret password to trusted keepers.</p>
+                    </div>
+                    <div class="form-group">
+                          <label class="control-label" for="current-block-hash-input">Current hash block:</label>
+                          <div>
+                              <input type="text" class="form-control" id="current-block-hash-input" placeholder="e.g.: 0000000000000000002bbbd03563aad9d6ea69438edec334a1394705d71c247e">
+                          </div>
+                          <p>The hash of the block that contains your first transaction (to minimize the possibility of that block becoming orphan, wait for five confirmations).</p>
+                    </div>
+                      <div class="form-group">
+                          <label class="control-label" for="password-input">Secret password:</label>
+                          <div>
+                              <input type="password" class="form-control" id="password-input" placeholder="e.g.: E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262,  My dog's name, etc">
+                          </div>
+                          <p>Your secret password. It can be any combination of alphanumeric characters.</p>
+                    </div>
                     <div class="row">
-                        <h1>Registration: </h1>
-                    </div>
-                    <div class="form-group row">
-                        <label for="public-key-input">Public Key:</label>
-                        <input type="text" class="form-control" id="public-key-input">
-                    </div>
-                    <div class="form-group row">
-                        <label for="period-input">Time Period:</label>
-                        <input type="number" class="form-control" id="period-input">
-                    </div>
-                    <div class="form-group row">
-                        <label for="current-block-hash-input">Current Block Hash:</label>
-                        <input type="text" class="form-control" id="current-block-hash-input">
-                    </div>
-                    <div class="form-group row">
-                        <label for="password-input">Password:</label>
-                        <input type="password" class="form-control" id="password-input">
-                    </div>
-                    <div class = "row">
-                        <button type="button" class="btn btn-default col-xs-3" id="submit-register-buttom">Submit</button>
-                        <button type="button" class="btn btn-default col-xs-3" id="go-back-buttom">Go back</button>
+                        <button type="button" class="btn btn-default col-xs-3" id="submit-register-button">Submit</button>
+                        <button type="button" class="btn btn-default col-xs-3" id="go-back-button">Go back</button>
                     </div>
                 </div>
             </div>
@@ -122,7 +136,7 @@
                         <div class="row vertical-align-quarter">
                         </div>
                         <div class="row">
-                            <h1 class="col-xs-12">Welcome to Deadman!</h1>
+                            <h1 class="col-xs-12">Welcome to Deadman Switch!</h1>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
@@ -149,14 +163,14 @@
                         <div class="row">
                             <form class="col-xs-11 form-box">
                                 <div class="form-group">
-                                    <button id="register-buttom-mobile" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+                                    <button id="register-button-mobile" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
                                 </div>
                             </form>
                         </div>
                         <div class="row">
                             <form class="col-xs-11 form-box">
                                 <div class="form-group">
-                                    <button id="check-buttom-mobile" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
+                                    <button id="check-button-mobile" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
                                 </div>
                             </form>
                         </div>
@@ -164,7 +178,42 @@
                 </div>
             </div>
             <div class="row register-tab-mobile">
-                <h1>Register Process</h1>
+                <div class="row">
+                    <h1 class="col-xs-10 col-xs-push-1">Register your secret</h1>
+                </div>
+                <div class="row col-xs-10 col-xs-push-1">
+                    <div class="form-group">
+                          <label class="control-label" for="public-key-input">Pubkey:</label>
+                          <div>
+                              <input type="text" class="form-control" id="public-key-input" placeholder="e.g.: 02a1633cafcc...">
+                          </div>
+                          <p>A bitcoin public key that will identify the transactions that "keep you alive".</p>
+                    </div>
+                    <div class="form-group">
+                          <label class="control-label" for="period-input">Time period (in seconds):</label>
+                          <div>
+                              <input type="number" class="form-control" id="period-input" placeholder="e.g.: 1296000 (= 30 days)">
+                          </div>
+                          <p>The maximum amount of time (in seconds) that can pass between two consecutive transactions before the switch is activated.
+                    <div class="form-group">
+                          <label class="control-label" for="current-block-hash-input">Current hash block:</label>
+                          <div>
+                              <input type="text" class="form-control" id="current-block-hash-input" placeholder="e.g.: 002bbd6ea638...">
+                          </div>
+                          <p>The hash of the block that contains your first transaction (for security wait for five confirmations).</p>
+                    </div>
+                      <div class="form-group">
+                          <label class="control-label" for="password-input">Secret password:</label>
+                          <div>
+                              <input type="password" class="form-control" id="password-input" placeholder="e.g.: My dog's name, etc">
+                          </div>
+                          <p>Your secret password. Any combination of alphanumeric characters.</p>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-default" id="submit-register-button-mobile">Submit</button>
+                        <button type="button" class="btn btn-default pull-right" id="go-back-button-mobile">Go back</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
