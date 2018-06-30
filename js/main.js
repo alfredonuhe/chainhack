@@ -66,10 +66,10 @@ $(document).ready(function() {
         checkLedger(mobileText);
     };
 
-    document.getElementById("go-back-button" + mobileText).onclick = function(){
+    $(".go-back-button" + mobileText).click(function(){
         $('.home-tab' + mobileText).show();
         $('.register-tab' + mobileText).hide();
         $('.check-tab' + mobileText).hide();
-    };
+    });
 
 });
