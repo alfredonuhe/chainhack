@@ -22,23 +22,33 @@ function registerLedger() {
 
 $(document).ready(function() {
 
-     document.getElementById("register-buttom").onclick = function(){
+     document.getElementById("register-button").onclick = function(){
          $('.home-tab').hide();
          $('.register-tab').show();
      };
 
-     document.getElementById("register-buttom-mobile").onclick = function(){
+     document.getElementById("register-button-mobile").onclick = function(){
         $('.home-tab-mobile').hide();
         $('.register-tab-mobile').show();
     };
 
-    document.getElementById("submit-register-buttom").onclick = function(){
+    document.getElementById("submit-register-button").onclick = function(){
         registerLedger();
     };
 
-    document.getElementById("go-back-buttom").onclick = function(){
+    document.getElementById("submit-register-button-mobile").onclick = function(){
+        registerLedger();
+    };
+
+    document.getElementById("go-back-button").onclick = function(){
         $('.home-tab').show();
         $('.register-tab').hide();
+    };
+
+    document.getElementById("go-back-button-mobile").onclick = function(){
+        console.log("goback");
+        $('.home-tab-mobile').show();
+        $('.register-tab-mobile').hide();
     };
 
 });

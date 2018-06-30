@@ -28,6 +28,7 @@ body {
     display: none;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: "red";
 }
 
 
@@ -70,6 +71,11 @@ body {
     .line {
         border-right: 0px ridge #14c962;
         border-bottom: 10px ridge #14c962;;
+    }
+
+    .register-tab-mobile {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
