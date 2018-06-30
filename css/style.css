@@ -25,8 +25,11 @@ body {
 }
 
 .register-tab, .register-tab-mobile {
-    display: block;
+    display: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
 
 @media (max-device-width: 480px) {
     p {

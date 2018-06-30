@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
 
 </head>
 
 <body>
     <div class="container">
         <div class ="hide-mobile as-parent">
-            <div class="row as-parent">
+            <div class="row as-parent home-tab">
                 <div class="col-xs-8 as-parent line left-side-pannel">
                     <div class="row vertical-align-quarter">
                     </div>
@@ -48,65 +51,92 @@
                     <div class="row">
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
-                                <button id="register-ledger" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+                                <button id="register-buttom" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
                             </div>
                         </form>
                     </div>
                     <div class="row">
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
-                                <button id="check-ledger" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
+                                <button id="check-buttom" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="row as-parent register-tab">
-            </div>
-        </div>
-        <div class="show-mobile">
-            <div class="row">
-                <div class="col-xs-12 line left-side-pannel">
-                    <div class="row vertical-align-quarter">
-                    </div>
+                <div class="col-xs 12">
                     <div class="row">
-                        <h1 class="col-xs-12">Welcome to Deadman!</h1>
+                        <h1>Registration: </h1>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                          <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
-                            The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
-                          The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
-                          <p>Please select your role:
-                            <ul>
-                              <li> You want to store a secret password on the device </li>
-                              <li> You want to check whether the whistleblower is still alive </li>
-                            </ul>
-                          </p>
-                        </div>
+                    <div class="form-group row">
+                        <label for="public-key-input">Public Key:</label>
+                        <input type="text" class="form-control" id="public-key-input">
+                    </div>
+                    <div class="form-group row">
+                        <label for="period-input">Time Period:</label>
+                        <input type="number" class="form-control" id="period-input">
+                    </div>
+                    <div class="form-group row">
+                        <label for="current-block-hash-input">Current Block Hash:</label>
+                        <input type="text" class="form-control" id="current-block-hash-input">
+                    </div>
+                    <div class="form-group row">
+                        <label for="password-input">Password:</label>
+                        <input type="password" class="form-control" id="password-input">
+                    </div>
+                    <div class = "row">
+                        <button type="button" class="btn btn-default col-xs-3" id="submit-register-buttom">Submit</button>
+                        <button type="button" class="btn btn-default col-xs-3" id="go-back-buttom">Go back</button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div id="login-register-tab-mobile" class="col-xs-12 right-side-pannel">
-                    <div class="row vertical-align-middle">
-                    </div>
-                    <div class="row">
-                        <h2 class="col-xs-11">Select your option:</h2>
-                    </div>
-                    <div class="row">
-                        <form class="col-xs-11 form-box">
-                            <div class="form-group">
-                                <button id="login-session-mobile" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+        </div>
+        <div class="show-mobile">
+            <div class ="home-tab-mobile">
+                <div class="row">
+                    <div class="col-xs-12 line left-side-pannel">
+                        <div class="row vertical-align-quarter">
+                        </div>
+                        <div class="row">
+                            <h1 class="col-xs-12">Welcome to Deadman!</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                              <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
+                                The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
+                              The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
+                              <p>Please select your role:
+                                <ul>
+                                  <li> You want to store a secret password on the device </li>
+                                  <li> You want to check whether the whistleblower is still alive </li>
+                                </ul>
+                              </p>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="row">
-                        <form class="col-xs-11 form-box">
-                            <div class="form-group">
-                                <button id="register-session-mobile" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
-                            </div>
-                        </form>
+                </div>
+                <div class="row">
+                    <div id="login-register-tab-mobile" class="col-xs-12 right-side-pannel">
+                        <div class="row vertical-align-middle">
+                        </div>
+                        <div class="row">
+                            <h2 class="col-xs-11">Select your option:</h2>
+                        </div>
+                        <div class="row">
+                            <form class="col-xs-11 form-box">
+                                <div class="form-group">
+                                    <button id="register-buttom-mobile" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <form class="col-xs-11 form-box">
+                                <div class="form-group">
+                                    <button id="check-buttom-mobile" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
