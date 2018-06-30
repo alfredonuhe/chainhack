@@ -43,7 +43,6 @@ function checkLedger(mobileText){
 
 
 $(document).ready(function() {
-
     var mobileText = "";
     if (document.documentElement.clientWidth <= 480) mobileText = "-mobile";
     console.log(mobileText);
