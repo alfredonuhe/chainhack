@@ -27,9 +27,9 @@ function checkLedger(mobileText){
         success: function(data){
             var json = JSON.parse(data);
             if (json.privatekey) {
-                document.getElementById("check-result" + mobileText).innerHTML = "Result: Ledger stopped functioning";
+                document.getElementById("check-result" + mobileText).innerHTML = "Result: Dead man!";
             }else {
-                document.getElementById("check-result" + mobileText).innerHTML = "Result: Ledger is still functioning";
+                document.getElementById("check-result" + mobileText).innerHTML = "Result: Still alive!";
             }
             setTimeout(function(){document.getElementById("check-result" + mobileText).innerHTML = "Result:";}, 3000);
         },
