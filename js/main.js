@@ -27,9 +27,10 @@ function checkLedger(mobileText){
         success: function(data){
             var json = JSON.parse(data);
             if (json.privatekey) {
-                document.getElementById("check-result" + mobileText).innerHTML = "Result: Dead man!";
+                console.log(document.getElementById("check-result" + mobileText).innerHTML)
+                document.getElementById("check-result" + mobileText).innerHTML = "Result: &nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color:red; font-size:150%\">Dead man! &#9760;</span>";
             }else {
-                document.getElementById("check-result" + mobileText).innerHTML = "Result: Still alive!";
+                document.getElementById("check-result" + mobileText).innerHTML = "Result: &nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color:green; font-size:150%\">Still alive! &#10004;</span>";
             }
             setTimeout(function(){document.getElementById("check-result" + mobileText).innerHTML = "Result:";}, 3000);
         },
