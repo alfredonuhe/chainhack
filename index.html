@@ -25,22 +25,22 @@
         <div class ="hide-mobile as-parent">
             <div class="row as-parent home-tab">
                 <div class="col-xs-8 as-parent line left-side-pannel">
-                    <div class="row vertical-align-quarter">
+                    <div class="row vertical-align-middle">
                     </div>
                     <div class="row">
                         <h1 class="col-xs-10 col-xs-push-1">Welcome to Deadman Switch!</h1>
                     </div>
                     <div class="row">
                         <div class="col-xs-10 col-xs-push-1">
-                            <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
-                              The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
-                            The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
-                            <p>Please select your role:
+                            <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret password (possibly encrypting sensitive data).
+                              The secret password is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
+                            The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret password will be revealed to them. </p>
+                            <!--<p>Please select your role:
                               <ul>
                                 <li> You want to store a secret password on the device </li>
                                 <li> You want to check whether the whistleblower is still alive </li>
                               </ul>
-                            </p>
+                            </p>--->
                         </div>
                     </div>
                 </div>
@@ -48,9 +48,10 @@
                     <div class="row vertical-align-middle">
                     </div>
                     <div class="row">
-                        <h2 class="col-xs-10 col-xs-push-1">Select your option:</h2>
+                        <h2 class="col-xs-10 col-xs-push-1">Select your role:</h2>
                     </div>
                     <div class="row">
+                        <p class="col-xs-10 col-xs-push-1">&#9655; You are the whistleblower</p>
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
                                 <button id="register-button" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
@@ -58,6 +59,8 @@
                         </form>
                     </div>
                     <div class="row">
+                        <p></p>
+                        <p class="col-xs-10 col-xs-push-1">&#9655; You are a trusted keeper</p>
                         <form class="col-xs-10 col-xs-push-1 form-box">
                             <div class="form-group">
                                 <button id="check-button" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
@@ -145,15 +148,9 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                              <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret.
-                                The secret is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
-                              The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret will be revealed. </p>
-                              <p>Please select your role:
-                                <ul>
-                                  <li> You want to store a secret password on the device </li>
-                                  <li> You want to check whether the whistleblower is still alive </li>
-                                </ul>
-                              </p>
+                              <p>This app is conceived for a person, the whistleblower, who wants to link his "life end" to the revelation of a secret password (possibly encrypting sensitive data).
+                                The secret password is stored securely on several Nano Ledger devices, which are then distributed to a set of trusted keepers.
+                              The keepers can use the devices to check whether the whistleblower is still "alive" anytime. In case of "death", the secret password will be revealed to them. </p>
                             </div>
                         </div>
                     </div>
@@ -163,9 +160,10 @@
                         <div class="row vertical-align-middle">
                         </div>
                         <div class="row">
-                            <h2 class="col-xs-11">Select your option:</h2>
+                            <h2 class="col-xs-11">Select your role:</h2>
                         </div>
                         <div class="row">
+                            <p class="col-xs-10" style="font-size:110%">&#9655; You are the whistleblower</p>
                             <form class="col-xs-11 form-box">
                                 <div class="form-group">
                                     <button id="register-button-mobile" type="button" class="btn btn-lg btn-default btn-block">Register secret</button>
@@ -173,6 +171,7 @@
                             </form>
                         </div>
                         <div class="row">
+                            <p class="col-xs-10" style="font-size:110%">&#9655; You are a trusted keeper</p>
                             <form class="col-xs-11 form-box">
                                 <div class="form-group">
                                     <button id="check-button-mobile" type="button" class="btn btn-lg btn-default btn-block">Check Ledger</button>
