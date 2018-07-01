@@ -45,7 +45,7 @@ function checkLedger(mobileText){
 $(document).ready(function() {
     var mobileText = "";
     if (document.documentElement.clientWidth <= 480) mobileText = "-mobile";
-    console.log(mobileText);
+//    console.log(mobileText);
 
      document.getElementById("register-button" + mobileText).onclick = function(){
          $('.home-tab' + mobileText).hide();
@@ -55,7 +55,7 @@ $(document).ready(function() {
     document.getElementById("check-button" + mobileText).onclick = function(){
         $('.home-tab' + mobileText).hide();
         $('.check-tab' + mobileText).show();
-        console.log("_" + '.check-tab' + mobileText + "_");
+//        console.log("_" + '.check-tab' + mobileText + "_");
     };
 
     document.getElementById("submit-register-button" + mobileText).onclick = function(){
